@@ -3,9 +3,11 @@ import logo from "../img/logo.png";
 
 const Header = () => {
     return (
-        <div>
-            <img src={logo} alt="logo SynapseChain"></img>
-            <h1>SynapseChain</h1>
+        <div className="header">
+            <span className="header__logo-container">
+                <img className="header-logo" src={logo} alt="logo SynapseChain"></img>
+                <h1 className="header-h1">SynapseChain</h1>
+            </span>
         </div>
     )
 }

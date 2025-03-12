@@ -23,8 +23,8 @@ const CryptoChart = ({ coinId }) => {
   }, [coinId]);
 
   return (
-    <div className="mt-4 p-4 border rounded shadow">
-      <h3 className="text-lg font-semibold">Évolution sur 7 jours</h3>
+    <div className="crypto-chart">
+      <h3 className="crypto-chart__h3">Évolution sur 7 jours</h3>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={chartData}>
           <XAxis dataKey="date" />

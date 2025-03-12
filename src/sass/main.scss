@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: content-box;
+    font-family: "Kanit", sans-serif;
+}
+
+.header {
+    width:100%;
+    &__logo-container {
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+    }
+}
+
+.header-logo {
+    width:7%;
+    border-radius:50%;
+}
+
+.header-h1 {
+    margin-left:20px;
+    font-family: "Kanit", sans-serif;
+    font-weight:400;
+}
+
+.crypto-list {
+    background-color: paleturquoise;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    &__h2 {
+        font-family: "Kanit", sans-serif;
+        font-weight:400;
+        margin-bottom:10px;
+    }
+}
+
+.search-input {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+ul {
+    margin-top:20px;
+}
+
+.crypto-item {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height:30px;
+    font-weight:300;
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius:5px;
+}
+
+.crypto-item:hover {
+    background-color:rgb(206, 204, 204);
+}
+
+.crypto-chart {
+    &__h3 {
+        font-family: "Kanit", sans-serif;
+        font-weight:400;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}

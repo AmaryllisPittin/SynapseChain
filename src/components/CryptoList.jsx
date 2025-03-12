@@ -21,15 +21,15 @@ const CryptoList = () => {
   );
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold">Top Cryptos</h2>
+    <div className="crypto-list">
+      <h2 className="crypto-list__h2">Top Cryptos</h2>
       <SearchBar onSearch={setSearch} /> {/* Mise à jour de l'état search */}
 
       <ul>
         {filteredCryptoData.map((coin) => (
           <li
             key={coin.id}
-            className="flex justify-between border-b p-2 cursor-pointer hover:bg-gray-200"
+            className="crypto-item"
             onClick={() => setSelectedCoin(coin.id)}
           >
             <span>{coin.name} ({coin.symbol.toUpperCase()})</span>
